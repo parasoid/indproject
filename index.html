@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,10 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chiron+GoRound+TC:wght@200..900&display=swap" rel="stylesheet">
-    <title>Project</title>
-    <script src="js/main.js"></script>
+    <title>Инфокоммуникационные системы и сети</title>
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 <body>
 
@@ -25,6 +23,7 @@
                 <li><a href="#main">Главная</a></li>
                 <li><a href="#program">Программа</a></li>
                 <li><a href="#admission">Поступление</a></li>
+                <li><a href="#equipment">Оборудование</a></li>
             </ul>
             <div class="burger">
                 <span></span>
@@ -38,7 +37,8 @@
     <section id="main" class="hero">
         <div class="container">
             <h1>Инфокоммуникационные системы и сети</h1>
-            <p>Наша специальность отвечает за многие направления. В основном за прокладку интернет кабелей,системное администрирование, проектирование, монта устройств связи и многое другое. </p>
+            <p>Наша специальность отвечает за многие направления. В основном за прокладку интернет кабелей, системное администрирование, проектирование, монтаж устройств связи и многое другое.</p>
+            <a href="#program" class="btn">Узнать больше</a>
         </div>
     </section>
 
@@ -103,7 +103,7 @@
                 <button class="tab-btn active" data-tab="tab1">1-2 курс</button>
                 <button class="tab-btn" data-tab="tab2">3-4 курс</button>
                 <button class="tab-btn" data-tab="tab3">Практика</button>
-                </div>
+            </div>
             
             <div class="tab-content active" id="tab1">
                 <ul>
@@ -136,6 +136,33 @@
         </div>
     </section>
 
+    <!-- Оборудование -->
+    <section id="equipment" class="equipment">
+        <div class="container">
+            <h2>Оборудование и технологии</h2>
+            <div class="equipment-grid">
+                <div class="equipment-item">
+                    <h3>Сетевое оборудование</h3>
+                    <ul>
+                        <li>Маршрутизаторы Cisco</li>
+                        <li>Коммутаторы уровня L2/L3</li>
+                        <li>Точки доступа Wi-Fi</li>
+                        <li>Маршрутизаторы Mikrotik</li>
+                    </ul>
+                </div>
+                <div class="equipment-item">
+                    <h3>Технологии</h3>
+                    <ul>
+                        <li>Волоконно-оптические линии</li>
+                        <li>Виртуальные частные сети (VPN)</li>
+                        <li>Облачные платформы</li>
+                        <li>Системы мониторинга</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Как поступить -->
     <section id="admission" class="admission">
         <div class="container">
@@ -161,39 +188,13 @@
         </div>
     </section>
 
-    <section class="equipment">
-        <div class="container">
-            <h2>Оборудование и технологии</h2>
-            <div class="equipment-grid">
-                <div class="equipment-item">
-                    <h3>Сетевое оборудование</h3>
-                    <ul>
-                        <li>Маршрутизаторы Cisco</li>
-                        <li>Коммутаторы уровня L2/L3</li>
-                        <li>Точки доступа Wi-Fi</li> 
-                        <li>Маршрутизаторы Mikrotik</li>
-                    </ul>
-                </div>
-                <div class="equipment-item">
-                    <h3>Технологии</h3>
-                    <ul>
-                        <li>Волоконно-оптические линии</li>
-                        <li>Виртуальные частные сети (VPN)</li>
-                        <li>Облачные платформы</li>
-                        <li>Системы мониторинга</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Футер -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Волков Александр ИКС-8. Учебный проект по специальности "Инфокомуникационные системы и сети"</p>
+            <p>&copy; 2025 Волков Александр ИКС-8. Учебный проект по специальности "Инфокоммуникационные системы и сети"</p>
         </div>
     </footer>
-    <!-- Кнопка "Наверх" -->
-    <button class="scroll-to-top" id="scrollToTop">↑</button>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
