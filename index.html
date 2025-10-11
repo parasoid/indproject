@@ -6,7 +6,10 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="manifest" href="img/icons/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chiron+GoRound+TC:wght@200..900&display=swap" rel="stylesheet">
     <title>Project</title>
     <script src="js/main.js"></script>
     <link rel="stylesheet" href="css/style.css">
@@ -14,23 +17,183 @@
 </head>
 <body>
 
-    <header>
-        <div class="container">
-
-        </div>
+ <!-- Шапка сайта -->
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">Проект ИКС</div>
+            <ul class="nav-menu">
+                <li><a href="#main">Главная</a></li>
+                <li><a href="#program">Программа</a></li>
+                <li><a href="#admission">Поступление</a></li>
+            </ul>
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
     </header>
 
-    <main>
+    <!-- Главный экран -->
+    <section id="main" class="hero">
         <div class="container">
-
+            <h1>Инфокоммуникационные системы и сети</h1>
+            <p>Наша специальность отвечает за многие направления. В основном за прокладку интернет кабелей,системное администрирование, проектирование, монта устройств связи и многое другое. </p>
         </div>
-    </main>
+    </section>
 
-    <footer>
+    <!-- Блок с цифрами -->
+    <section class="numbers">
         <div class="container">
+            <div class="numbers-grid">
+                <div class="number-item">
+                    <div class="number">95%</div>
+                    <div class="number-label">Трудоустройство выпускников</div>
+                </div>
+                <div class="number-item">
+                    <div class="number">4</div>
+                    <div class="number-label">Компьютерные лаборатории</div>
+                </div>
+                <div class="number-item">
+                    <div class="number">50+</div>
+                    <div class="number-label">Партнеров-работодателей</div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Чему научитесь -->
+    <section class="skills">
+        <div class="container">
+            <h2>Что мы изучаем</h2>
+            <div class="skills-list">
+                <div class="skill-item">
+                    <span class="check">✓</span>
+                    <span>Администрировать сети (Cisco, Windows/Linux)</span>
+                </div>
+                <div class="skill-item">
+                    <span class="check">✓</span>
+                    <span>Программировать на Python, Java</span>
+                </div>
+                <div class="skill-item">
+                    <span class="check">✓</span>
+                    <span>Защищать данные от кибератак</span>
+                </div>
+                <div class="skill-item">
+                    <span class="check">✓</span>
+                    <span>Работать с базами данных и облаками</span>
+                </div>
+                <div class="skill-item">
+                    <span class="check">✓</span>
+                    <span>Проектировать корпоративные сети</span>
+                </div>
+                <div class="skill-item">
+                    <span class="check">✓</span>
+                    <span>Настраивать сетевое оборудование</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Программа обучения -->
+    <section id="program" class="program">
+        <div class="container">
+            <h2>Программа обучения</h2>
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="tab1">1-2 курс</button>
+                <button class="tab-btn" data-tab="tab2">3-4 курс</button>
+                <button class="tab-btn" data-tab="tab3">Практика</button>
+                </div>
+            
+            <div class="tab-content active" id="tab1">
+                <ul>
+                    <li>Основы программирования</li>
+                    <li>Компьютерные сети</li>
+                    <li>Операционные системы</li>
+                    <li>Базы данных</li>
+                    <li>Web-технологии</li>
+                </ul>
+            </div>
+            
+            <div class="tab-content" id="tab2">
+                <ul>
+                    <li>Кибербезопасность</li>
+                    <li>Системное администрирование</li>
+                    <li>Облачные технологии</li>
+                    <li>Корпоративные сети</li>
+                    <li>Дипломное проектирование</li>
+                </ul>
+            </div>
+            
+            <div class="tab-content" id="tab3">
+                <ul>
+                    <li>Стажировки в IT-компаниях</li>
+                    <li>Лабораторные работы на реальном оборудовании</li>
+                    <li>Участие в хакатонах</li>
+                    <li>Сертификация Cisco CCNA</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Как поступить -->
+    <section id="admission" class="admission">
+        <div class="container">
+            <h2>Как поступить</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-text">Подать заявление</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-text">Предоставить аттестат</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-text">Пройти собеседование</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-text">Зачисление</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="equipment">
+        <div class="container">
+            <h2>Оборудование и технологии</h2>
+            <div class="equipment-grid">
+                <div class="equipment-item">
+                    <h3>Сетевое оборудование</h3>
+                    <ul>
+                        <li>Маршрутизаторы Cisco</li>
+                        <li>Коммутаторы уровня L2/L3</li>
+                        <li>Точки доступа Wi-Fi</li> 
+                        <li>Маршрутизаторы Mikrotik</li>
+                    </ul>
+                </div>
+                <div class="equipment-item">
+                    <h3>Технологии</h3>
+                    <ul>
+                        <li>Волоконно-оптические линии</li>
+                        <li>Виртуальные частные сети (VPN)</li>
+                        <li>Облачные платформы</li>
+                        <li>Системы мониторинга</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Волков Александр ИКС-8. Учебный проект по специальности "Инфокомуникационные системы и сети"</p>
         </div>
     </footer>
-
+    <!-- Кнопка "Наверх" -->
+    <button class="scroll-to-top" id="scrollToTop">↑</button>
 </body>
 </html>
